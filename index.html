@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Linguagem do site-->
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Centro Boa Forma - Seu espaço de saude</title>
+	<link rel="icon" href="img/fav.png">
+	<!-- GOOGLE ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- MATERIALIZE -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- CUSTOM -->
+	<link rel="stylesheet" href="css/custom.css">
+</head> 
+<body>
+
+	<header>
+		<div class="navbar-fixed">
+			<nav class="navbar">
+			    <div class="nav-wrapper container">
+					<a href="#"><img class="logo_img" src="img/logo.png"> </a>
+
+					<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
+
+					<ul class="right hide-on-med-and-down">
+					   <li><a href="sass.html">Home</a></li>
+					   <li><a href="badges.html">Serviços</a></li>
+					   <li><a href="collapsible.html">Unidades</a></li>
+					   <li><a href="mobile.html">Sobre</a></li>
+					   <li><a href="mobile.html">Contato</a></li>
+					</ul>
+			    </div>
+  			</nav>
+
+		    <ul class="sidenav" id="menu-mobile">
+			    <li><a href="sass.html">Home</a></li>
+				<li><a href="badges.html">Serviços</a></li>
+	  		    <li><a href="collapsible.html">Unidades</a></li>
+			    <li><a href="mobile.html">Sobre</a></li>
+			    <li><a href="mobile.html">Contato</a></li>
+		    </ul>
+		</div>
+	</header>
+
+	<section class="home bloco">
+		<div class="row container banner">
+			<div class="col s12 center">
+				<h2 class="white-text">O melhor treinamento funcional da região</h2>
+				<p class="white-text light">Um novo conceito em prevenção, promoção e reabilitação da saude para quem busca melhot condicionamento e emagracimento, além de ser divertido e desafiador. Quer experimentar?</p>
+				<div class="row">
+					<a class="btn btn-large blue-logo">Sobre nós</a>
+					<a class="btn btn-large white black-text">Contato</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- JQUERY JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<!-- MATERIALIZE JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+	<!-- JAVASCRIPT-->
+	<script>
+		$(document).ready(function(){
+			//MENU MOBILE
+			$(".button-collapse").sideNav();
+		});
+	</script>
+</body>
+</html>

@@ -1,74 +1,121 @@
 /*Heigth 100%*/
+html{
+	overflow-x: hidden;
+}
+
 html, body{
 	height: 100%;
 }
+
 .bloco{
 	min-height: 100%;
 	padding-top: 94px;
 }
 
-/*COLORS*/
-.blue-logo{
-	background-color: #2dc7d0;
+/*CORES*/
+.azul_claro_f{
+	color:#51A7B0;
 }
+
+.azul_escuro_f{
+	color:#26488B;
+}
+
+.azul_bg{
+	background:#51A7B0;
+}
+
+.vermelho_bg{
+	background: #bd4a07;
+}
+
 /*HOME*/
 .home{
-	animation: mudarbg 20s infinite;
+	animation: mudarbg 30s infinite;
 	background-image: url('../img/bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.banner h2{
-	font-size: 2.5rem;
+.home .area_banner h2{
 	font-weight: 900;
-	text-transform: uppercase;
-}
-.banner p{
-	font-size: 1.2rem;
-	line-height: 1.8rem;
 }
 
-/* LOGO*/
-.logo_text{
-	font-size: 0;
-	margin: 0;
-}
+/*Logo*/
 .logo_img{
-	width: 200px;
-	margin-top: 12px;
+	width: 70%;
 }
 
-/* CUSTOM NAV*/
-/*MENU*/
-.navbar{
-	background-color: transparent;
-}
-.navbar ul a:hover{
-	background-color: transparent;
-	color: #2dc7d0;
-}
-nav {
-  color: #fff;
-  background-color: #ee6e73;
-  width: 100%;
-  height: 94px;
-  line-height: 94px;
+.area_banner{
+	color: white;
 }
 
-nav.nav-extended .nav-wrapper {
-  min-height: 95px;
-  height: auto;
+#sessao_botoes_banner button{
+	color: white;
 }
-.navbar-fixed {
-  position: absolute;
-  height: 94px;
-  z-index: 997;
+
+#sessao-ajuda .container{
+	padding-top: 8%;
+}
+
+#triangulo-para-direita {
+    border-top: 0px solid transparent;
+    border-bottom: 684px solid transparent;
+    border-left: 600px solid #51A7B0;
+    position: absolute;
+}
+
+#img-ajuda{
+	width: 120%;
+}
+
+.fundo-redondo{
+	background: aliceblue;
+    border-radius: 220px;
+    width: 430px;
+	height: 430px;
+	display: flex;
+}
+
+#servicos .itens{
+	border-radius: 30px;
+    width: 100%;
+    height: 260px;
+    background: #51a7b024;
+}
+
+#servicos .itens img{
+	width: 100%;
+}
+
+#servicos .container{
+	padding-top: 3%;
+}
+
+#unidades{
+	padding-top: 4%;
+}
+
+#unidades .fundo{
+	background: #178f6deb;
+}
+
+#unidades .titulo{
+	font-weight: 900;
+	font-size: 40px;
+}
+
+#triangulo-para-esquerda {
+	width: 100%;
+    border-bottom: 0px solid transparent;
+    border-top: 253px solid transparent;
+    border-right: 253px solid #51A7B0;
+    position: absolute;
 }
 
 /* ANIMAÇÃO HOME */
 @keyframes mudarbg{
-	40%{ background-image: url('../img/bg2.jpg');  }
+	40%{ background-image: url('../img/bg2.jpg'); }
 	80%{ background-image: url('../img/bg3.jpg'); }
 	100%{ background-image: url('../img/bg.jpg'); }
 }

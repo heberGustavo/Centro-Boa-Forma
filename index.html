@@ -1,71 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <!-- Linguagem do site-->
+<html lang="pt-br">
+<!-- Linguagem do site-->
+
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Centro Boa Forma - Seu espaço de saude</title>
 	<link rel="icon" href="img/fav.png">
 	<!-- GOOGLE ICONS-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- MATERIALIZE -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<!-- CUSTOM -->
 	<link rel="stylesheet" href="css/custom.css">
-</head> 
+</head>
+
 <body>
 
-	<header>
-		<div class="navbar-fixed">
-			<nav class="navbar">
-			    <div class="nav-wrapper container">
-					<a href="#"><img class="logo_img" src="img/logo.png"> </a>
+	<header class="bg-light">
+		<div class="container">
+			<div class="navbar-fixed">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#"><img class="logo_img" src="img/logo.png"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-					<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
-
-					<ul class="right hide-on-med-and-down">
-					   <li><a href="sass.html">Home</a></li>
-					   <li><a href="badges.html">Serviços</a></li>
-					   <li><a href="collapsible.html">Unidades</a></li>
-					   <li><a href="mobile.html">Sobre</a></li>
-					   <li><a href="mobile.html">Contato</a></li>
-					</ul>
-			    </div>
-  			</nav>
-
-		    <ul class="sidenav" id="menu-mobile">
-			    <li><a href="sass.html">Home</a></li>
-				<li><a href="badges.html">Serviços</a></li>
-	  		    <li><a href="collapsible.html">Unidades</a></li>
-			    <li><a href="mobile.html">Sobre</a></li>
-			    <li><a href="mobile.html">Contato</a></li>
-		    </ul>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Serviços</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Unidades</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contato</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</div>
 	</header>
 
 	<section class="home bloco">
-		<div class="row container banner">
-			<div class="col s12 center">
-				<h2 class="white-text">O melhor treinamento funcional da região</h2>
-				<p class="white-text light">Um novo conceito em prevenção, promoção e reabilitação da saude para quem busca melhot condicionamento e emagracimento, além de ser divertido e desafiador. Quer experimentar?</p>
-				<div class="row">
-					<a class="btn btn-large blue-logo">Sobre nós</a>
-					<a class="btn btn-large white black-text">Contato</a>
+		<div class="container">
+			<div class="row area_banner">
+				<div class="col-md-8">
+					<h2 class="display-4">O melhor treinamento funcional da região</h2>
+					<p>Um novo conceito em prevenção, promoção e reabilitação da saude para quem
+						busca melhot condicionamento e emagracimento, além de ser divertido e desafiador. Quer
+						experimentar?
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6" id="sessao_botoes_banner">
+					<button class="btn azul_bg">Sobre nós</button>
+					<button class="btn vermelho_bg">Contato</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- JQUERY JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<!-- MATERIALIZE JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<section id="sessao-ajuda">
+		<div id="triangulo-para-direita"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="fundo-redondo">
+						<img id="img-ajuda" src="img/ajuda.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-7">
+					<h2>Como o <text class="azul_escuro_f">SUPER</text> <text class="azul_claro_f">AÇÃO</text> pode te
+						ajudar</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at reprehenderit eos
+						necessitatibus animi temporibus incidunt quos commodi vero. Alias ipsa vero maxime id nostrum
+						eos quas odio similique fugit!
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at reprehenderit eos
+						necessitatibus animi temporibus incidunt quos commodi vero. Alias ipsa vero maxime id nostrum
+						eos quas odio similique fugit!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<!-- JAVASCRIPT-->
-	<script>
-		$(document).ready(function(){
-			//MENU MOBILE
-			$(".button-collapse").sideNav();
-		});
-	</script>
+	<section id="servicos">
+		<div class="container text-center">
+			<h2>Nossos Serviços</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="itens">
+						<img src="img/itens.png" alt="">
+					</div>
+					<h4>Lorem Ipson</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi numquam at optio quos
+						voluptas mollitia similique saepe</p>
+				</div>
+				<div class="col-md-4">
+					<div class="itens">
+						<img src="img/itens.png" alt="">
+					</div>
+					<h4>Lorem Ipson</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi numquam at optio quos
+						voluptas mollitia similique saepe</p>
+				</div>
+				<div class="col-md-4">
+					<div class="itens">
+						<img src="img/itens.png" alt="">
+					</div>
+					<h4>Lorem Ipson</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi numquam at optio quos
+						voluptas mollitia similique saepe</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="unidades">
+		<div class="row">
+			<div class="col-md-6 fundo d-flex">
+				<div class="align-self-center text-center">
+					<h3 class="titulo">Melhore o seu dia a dia</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam sint quis ea atque iste
+						obcaecati
+						laboriosam similique, placeat molestias. Delectus, blanditiis. Fugiat cumque rem voluptatum sunt
+						pariatur aperiam saepe commodi.</p>
+				</div>
+			</div>
+			<div class="col-md-6 p-0">
+				<img src="img/banner-01.jpg" alt="" style="width: 100%;">
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
